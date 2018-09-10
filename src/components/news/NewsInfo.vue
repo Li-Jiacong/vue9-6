@@ -4,7 +4,7 @@
         <h3 class="title">{{NewsInfo.title}}</h3>
         <!-- 时间和点击量信息 -->
         <p class="subtitle">
-            <span>发表时间:{{NewsInfo.add_time}}</span>
+            <span>发表时间:{{NewsInfo.add_time|dateFormat}}</span>
             <span>点击{{NewsInfo.click}}次</span>
         </p>
         <hr>
@@ -43,7 +43,7 @@ export default {
         }
     },
     components:{
-        'comment-box':comment
+        'commentBox':comment
     }
 }
 </script>

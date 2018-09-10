@@ -20,6 +20,7 @@ import moment from 'moment';
 //安装router-resource
 Vue.use(VueResource);
 Vue.http.options.root = 'http://47.89.21.179:8080';
+Vue.http.options.emulateJSON = true;
 
 Vue.component(Header.name, Header);
 Vue.component(Swipe.name, Swipe);   //轮播图组件
@@ -27,7 +28,7 @@ Vue.component(SwipeItem.name, SwipeItem);
 Vue.component(Button.name, Button);
 
 //定义全局时间过滤器
-Vue.filter('dateFormat',function(dateStr, pattern='YYYY-MM-DD HH-mm-ss'){
+Vue.filter('dateFormat',function(dateStr, pattern='YYYY-MM-DD HH:mm:ss'){
     return moment(dateStr).format(pattern);
 })
 
