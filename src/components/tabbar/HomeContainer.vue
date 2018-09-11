@@ -2,7 +2,7 @@
     <div>
         <mt-swipe :auto="2500">
             <!-- 在组件中，使用v-for循环，一定要使用key -->
-            <mt-swipe-item v-for="item in lunbotuList" :key="item.url"> 
+            <mt-swipe-item v-for="(item,i) in lunbotuList" :key="i"> 
                 <img :src="item.img" alt="">
             </mt-swipe-item>
         </mt-swipe>
@@ -13,9 +13,9 @@
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/photolist">
 		                    <img src="../../img/menu2.png" alt="">
 		                    <div class="mui-media-body">图片分享</div></router-link></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/goodslist">
 		                    <img src="../../img/menu3.png" alt="">
-		                    <div class="mui-media-body">商品购买</div></a></li>
+		                    <div class="mui-media-body">商品购买</div></router-link></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <img src="../../img/menu4.png" alt="">
 		                    <div class="mui-media-body">留言反馈</div></a></li>
