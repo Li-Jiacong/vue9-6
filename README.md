@@ -1,3 +1,9 @@
+##使用说明
+1.clone后首先先下好所有的依赖包  cnpm install或者是npm install
+2.执行 npm run dev 即可自动打包后启动页面
+
+
+
 ##制作首页App组件
 1.完成Header区域，使用的是Mint-UI中的Header组件
 2.制作底部的Tabber区域，使用的是MUI的Tabber.html
